@@ -8,9 +8,9 @@ import {
   Put,
   Delete,
 } from '@nestjs/common'
-import { CreateCatDto } from 'cats/dto/create-cat.dto'
-import { CatService } from 'cats/services/cat.service'
-import { Cat } from 'cats/interfaces/cat.interface'
+import { CreateCatDto } from './create-cat.dto'
+import { CatService } from './cat.service'
+import { Cat } from './cat.interface'
 
 @Controller('cats')
 export class CatsController {
