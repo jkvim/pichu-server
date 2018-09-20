@@ -23,7 +23,7 @@ export class CatsController {
 
   @Get()
   async findAll(): Promise<Cat[]> {
-    return this.catService.finaAll()
+    return this.catService.findAll()
   }
 
   @Get(':id')

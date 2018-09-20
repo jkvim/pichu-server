@@ -7,9 +7,14 @@ export class CatService {
 
   create(cat: Cat) {
     this.cats.push(cat)
+    return cat
   }
 
-  finaAll(): Cat[] {
+  findAll(): Cat[] {
     return this.cats
+  }
+
+  findOneById(id: number): Cat {
+    return this.cats[0]
   }
 }
