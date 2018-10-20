@@ -3,6 +3,10 @@ export class CreateCatInput {
     age?: number;
 }
 
+export class Author {
+    username?: string;
+}
+
 export class Cat {
     id?: number;
     name?: string;
@@ -18,5 +22,17 @@ export abstract class IQuery {
 
     abstract cat(id: string): Cat | Promise<Cat>;
 
+    abstract topics(): Topics[] | Promise<Topics[]>;
+
     abstract temp__(): boolean | Promise<boolean>;
+}
+
+export class Topics {
+    id?: string;
+    category?: string;
+    title?: string;
+    commentCount?: number;
+    visitCount?: number;
+    lastActivity?: string;
+    author?: Author;
 }

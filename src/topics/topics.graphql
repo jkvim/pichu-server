@@ -1,0 +1,17 @@
+type Query {
+  topics: [Topics]
+}
+
+type Topics {
+  id: String
+  category: String
+  title: String
+  commentCount: Int
+  visitCount: Int
+  lastActivity: String
+  author: Author
+}
+
+type Author {
+  username: String
+}
